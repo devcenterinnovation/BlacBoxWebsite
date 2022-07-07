@@ -1,22 +1,36 @@
-import { AppBar, Button, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button,  Toolbar, Typography, Stack } from "@mui/material";
+import { Link } from "react-router-dom";
 
-import { BsChevronRight } from "react-icons/bs";
+// import { BsChevronRight } from "react-icons/bs";
+
+
+const links = [
+  {title:"Home", to:"/",},
+  {title:"About Us", to:"/about",},
+  {title:"Service ", to:"/service",},
+  {title:"Contact Us  ", to:"/contact",},
+  {title:"API Documentation  ", to:"/doc",},
+  {title:"Waitlist ", to:"/",},
+
+]
 
 export default function NavBar({dark,...props}){
 
   return (
     <AppBar  position="relative" sx={{zIndex:"1"}} color="transparent" elevation={0}> 
       <Toolbar>
-        <Box color={dark?"white":"black"}  sx={{display: {xs: "none", md: "flex"}, justifyContent: "space-around", width: "70%"}}>
-          <Typography >Home</Typography>
-          <Typography >About</Typography>
-          <Typography >Service</Typography>
-          <Typography >Contact</Typography>
-          <Button  sx={{display: "flex", justifyContent: "space-around", border: "1px solid #fff", pr: 2, pl: 2, borderRadius: "20px", background: "#fff"}}>
-            <span>Login</span>
-            <span style={{color: "#fff", marginLeft: "10px", background: "#7E7ACD", width: "10px", height: "10px", borderRadius: "50%", padding: "5px", display: "flex", justifyContent: "center", alignItems: "center", fontWeight: "bold"}}><BsChevronRight /></span>
-            </Button>
-        </Box>
+        <Stack width={"100%"} direction={"row"}justifyContent="space-between" >
+          <Typography> Logo </Typography>
+          <Stack direction={"row"} spacing={{xs:"20px", sm:"33px", md:"46px"}}>
+            {
+              links.map((item)=>(
+                <Link to={item.to}>
+                  <Button href={item.to} sx={{color:"black"}}> {item.title} </Button>
+                </Link>
+              ))
+            }
+          </Stack>
+        </Stack>
         
       </Toolbar>
     </AppBar>

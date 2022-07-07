@@ -1,18 +1,20 @@
-import { Box, Button, Grid, List, Typography } from "@mui/material"
+import { Box, Button, Grid, List, Stack, Typography } from "@mui/material"
 
 export default function DocumentationPage() {
   return (
     <Box>
-      <Grid container>
-        <Grid item xs={12} sm={4}></Grid>
-        <Grid item xs={12} sm={8}>
-          <Typography>
-            Well documented and easy-to-use APIs for
-            <span> developers</span>
+      <Stack direction={{xs:"column",md:"row"}} container minHeight={{xs:"240px", sm:"383px", md:"543px"}} >
+        <Box width={"100%"} maxWidth={{xs:"113px", sm:"180px", md:"255px"}}  alignSelf="flex-end">
+          fdsfs
+        </Box>
+        <Box maxWidth={{xs:"362px", sm:"578px", md:"820px"}} width="100%"  alignSelf="center" >
+          <Typography variant="h2" fontWeight={"600"} textAlign="center">
+            Well documented and <br/> easy-to-use APIs for
+            <Typography textTransform={"uppercase"} component={"span"}variant="h2" fontWeight={"600"}  color="primary"> developers</Typography>
           </Typography>
-          <Button>Read API doc</Button>
-        </Grid>
-      </Grid>
+          <Button variant="contained" sx={{mt:{xs:"11px", sm:"17px", md:"25px"}}}>Read API doc</Button>
+        </Box>
+      </Stack>
 
       <Box>
         <Box>

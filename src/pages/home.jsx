@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Stack, Typography } from "@mui/material"
-import AppTheme from "../style/theme/main"
+// import AppTheme from "../style/theme/main"
 
 const benefits = [
   {
@@ -27,41 +27,100 @@ const benefits = [
 export default function HomePage() {
   return (
     <Stack>
+      <Box pl={{ xs: "19px", sm: "30px", md: "42px" }}>
       <Grid container>
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" color={AppTheme.palette.primary.main} fontWeight="400">
+          <Box pt={{ xs: "32px", sm: "51px", md: "72px" }}>
+          <Typography
+            variant="h3"
+            // color={AppTheme.palette.primary.main}
+            letterSpacing={"1px"}
+            fontWeight="400"
+            maxWidth={{xs:"186px", sm:"296px", md:"420px"}}
+          >
             One API, Multiple Services for African Businesses.
           </Typography>
-          <Typography>
+          <Typography
+            mt={{ xs: "7px", sm: "11px", md: "15px" }}
+            fontSize={"14px"}
+          >
             Coherent APIs to generate new accounts, send payments, verify OTP
             and BVN, and retrive bank information
           </Typography>
-          <Button>Sign Up</Button>
-        </Grid>
-      </Grid>
-
-      <Grid container>
-        <Grid item xs={12} sm={6}></Grid>
-        <Grid item xs={12} sm={6}>
-          <Box>
-            <Typography fontWeight={"400"} variant="h4">Why Choose us</Typography>
+          <Box
+            maxWidth={{ xs: "144px", sm: "230px", md: "326px" }}
+            height={{ xs: "37px", sm: "59px", md: "83px" }}
+            mt={ { xs: "17px", sm: "27px", md: "39px" }}
+          >
+            <Button
+              fullWidth
+              sx={{
+                // mt: { xs: "17px", sm: "27px", md: "39px" },
+                height: "100%",
+              }}
+              color="secondary"
+              variant="contained"
+            >
+              Sign Up
+            </Button>
           </Box>
-          {benefits.map((item) => (
-            <Box key={item.title}>
-              <Typography variant="h6" fontWeight={600}> {item.title} </Typography>
-              <Typography> {item.text} </Typography>
-            </Box>
-          ))}
+          </Box>
+        </Grid>
+        <Grid item>
+
         </Grid>
       </Grid>
 
-      <Grid container>
+      </Box>
+
+      <Box borderRadius={{xs:"79px 0 0 0 ", sm:"126px 0 0 0 ", md:"178px 0 0 0 "}} mt={{xs:"18px", sm:"29px", md:"41px"}} pr={{xs:"39px", sm:"63px", md:"89px"}} pl={{xs:"19px", sm:"30px", md:"42px"}} pt={{xs:"26px", sm:"41px", md:"58px"}}  pb={{xs:"39px", sm:"62px", md:"88px"}} color="white" bgcolor={"#0D0D0D"}>
+        <Grid container >
+          <Grid item xs={12} sm={6}></Grid>
+          <Grid item xs={12} sm={6}>
+            <Box mb={{ xs: "10px", sm: "15px", md: "22px" }}>
+              <Typography
+                fontWeight={"400"}
+                variant="h4"
+                fontFamily={"poppins"}
+              >
+                Why Choose us
+              </Typography>
+            </Box>
+            <Stack spacing={{ xs: "14px", sm: "22px", md: "31px" }}>
+              {benefits.map((item) => (
+                <Box key={item.title}>
+                  <Typography mt={{xs:"1px", sm:"2px", md:"3px"}} variant="h6" fontWeight={600}>
+                    {" "}
+                    {item.title}{" "}
+                  </Typography>
+                  <Typography mt={{xs:"3px", sm:"5px", md:"8px"}}> {item.text} </Typography>
+                </Box>
+              ))}
+            </Stack>
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Grid
+        container
+        px={{ xs: "20px", sm: "33px", md: "46px" }}
+        mt={{ xs: "69px", sm: "111px", md: "157px" }}
+        pb={{ xs: "30px", sm: "47px", md: "67px" }}
+      >
         <Grid item xs={12} sm={6}>
           <Stack>
-            <Typography variant="h3">
+            <Typography
+              variant="h3"
+              fontWeight={"442"}
+              letterSpacing={{ xs: "1px", sm: "2px", md: "3px" }}
+            >
               Integrating products with the features that customers need{" "}
             </Typography>
-            <Box fontSize={"24px"}>
+            <Box
+              fontSize={"24px"}
+              mt={{ xs: "10px", sm: "16px", md: "23px" }}
+              mb={{ xs: "17px", sm: "27px", md: "39px" }}
+            >
               <Typography>
                 {" "}
                 Blackbox provides automated solutions to help you create digital
@@ -79,14 +138,23 @@ export default function HomePage() {
         <Grid item xs={12} sm={6}></Grid>
       </Grid>
 
-      <Box>
+      <Box
+        pl={{ xs: "26px", sm: "41px", md: "59px" }}
+        mt={{ xs: "20px", sm: "32px", md: "46px" }}
+        mb={{ xs: "31px", sm: "50px", md: "70px" }}
+      >
         <Box>
-          <Typography variant="h4" fontWeight={"600"}> Testimonials</Typography>
+          <Typography variant="h4" textAlign={"center"} fontWeight={"600"}>
+            {" "}
+            Testimonials
+          </Typography>
         </Box>
-        <Grid container>
+        <Grid container mt={{ xs: "27px", sm: "44px", md: "62px" }}>
           <Grid item xs={12} sm={6} md={4}>
             <Box>
-              <Typography  fontSize={"24px"} fontWeight={"600"}>Marchant: WallX</Typography>
+              <Typography fontSize={"24px"} fontWeight={"600"}>
+                Marchant: WallX
+              </Typography>
             </Box>
             <Box>
               <Typography>
