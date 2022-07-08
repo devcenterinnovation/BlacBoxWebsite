@@ -21,7 +21,7 @@
     margin-top: 10px;
   }
   
-  .form_field {
+  .form__field {
     font-family: inherit;
     width: 100%;
     border: none;
@@ -29,20 +29,21 @@
     font-size: 20px;
     color: #212121;
     padding: 15px 0;
+    /* border-radius: 5px; */
     background: transparent;
     transition: border-color 0.2s;
     border-bottom: 2px dotted black; 
 
   }
   
-  .form_field::placeholder {
+  .form__field::placeholder {
     color: black;
     display:inline-block;
     /* padding-left: 10px; */
     font-size: 14px;
   }
 
-  .form_field:placeholder-shown ~ .form__label {
+  .form__field:placeholder-shown ~ .form__label {
     font-size: 10px;
     cursor: text;
     top: 20px;
@@ -69,7 +70,7 @@
     color: black;
     display:inline-block;
   } */
-  .form_field ~ .form__label {
+  .form__field ~ .form__label {
 
     /* color: #009788; */
     display:none;
