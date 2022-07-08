@@ -1,4 +1,5 @@
 import { Avatar, Box, Button, Stack, Typography } from "@mui/material"
+import {Link} from 'react-router-dom'
 import AppTheme from "../style/theme/main"
 
 import {FiTrendingUp} from "react-icons/fi"
@@ -90,6 +91,8 @@ export default function HomePage() {
             height={{ xs: "59px", md: "83px" }}
             mt={ { xs: "17px", sm: "27px", md: "39px" }}
           >
+            {/*  */}
+            <Link to='/signup' style={{textDecoration:'none'}}>
             <Button
               fullWidth
               sx={{
@@ -101,6 +104,7 @@ export default function HomePage() {
             >
               Sign Up
             </Button>
+            </Link>
           </Box>
           </Box>
         </Box>

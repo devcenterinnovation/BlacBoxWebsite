@@ -65,7 +65,7 @@ export default function Loginpage() {
     </FormControl>      
 
     <Button sx={{backgroundColor:'#E2C703',fontWeight:'600', letterSpacing: '0.02em', fontSize:'16px', textTransform:'none', color:'black',width: {md:'20vw', sm:'30vw', xs:'100%'}, padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
-    <Stack  spacing={1} alignItems={'center'} sx={{fontSize:'10px', display:{md:'flex', xs:'column'}}}>
+    <Stack direction="row" spacing={1} alignItems={'center'} sx={{fontSize:'10px', flexDirection:{xs:'column',md:'row', sm:'row'}}}>
 
     <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/login'>Log In</a>
     </Stack>
