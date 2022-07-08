@@ -64,7 +64,7 @@ export default function Loginpage() {
     </RadioGroup>
     </FormControl>      
 
-    <Button sx={{backgroundColor:'#E2C703', color:'black',width:'fit-content', padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
+    <Button sx={{backgroundColor:'#E2C703',textTransform:'none', fontWeight:'600', color:'black',width:'fit-content', padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
     <Stack direction={'row'} spacing={2} alignItems={'center'} sx={{fontSize:'10px'}}>
 
     <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'20px'}}href='/signup'>Sign up</a>

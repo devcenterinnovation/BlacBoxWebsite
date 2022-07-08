@@ -65,7 +65,7 @@ export default function Signinpage() {
     </FormControl>      
 <Stack spacing={2}>
 
-    <Button sx={{backgroundColor:'#E2C703', color:'black', width: {md:'20vw', sm:'30vw', xs:'fit-content'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
+    <Button sx={{backgroundColor:'#E2C703', color:'black',textTransform:'none', width: {md:'20vw', sm:'30vw', xs:'fit-content'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
     <Stack direction={'row'} spacing={1} alignItems={'center'} sx={{fontSize:'10px'}}>
 
     <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/signup'>Sign up</a>
