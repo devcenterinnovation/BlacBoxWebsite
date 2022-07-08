@@ -8,8 +8,6 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import icon from '../images/signin/icon.png'
-// import AppTheme from '../style/theme/main';
-// import AppTheme from '../style/theme/main'
 
 export default function Loginpage() {
   const [value, setValue] = React.useState('female');
@@ -24,18 +22,18 @@ export default function Loginpage() {
         <Grid item md={12} xs={12}>
         <Stack direction ='row' justifyContent={'space-between'} alignItems='center' px={2} sx={{paddingRight: {md:'50px', xs:'0px'}, width:'100%', }}>
         <img src={icon} alt='icon' width={'100px'}/>
-        <a href='/' style={{color:'#E2C703'}}>Close</a>
+        <a href='/' style={{color:'#E2C703', fontSize:'24px'}}>Close</a>
         </Stack>
         </Grid>
-      <Grid item md={6} xs={6} sm={12} >
+      <Grid item md={6} xs={12} sm={12} >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
-      <Typography sx={{fontWeight:'600', fontSize:'20px'}}>Sign Up</Typography>
+      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Sign Up</Typography>
         <div class="form__group">
                   <input
                     type="text"
                     id="fullname"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Name"
                   />
                   <label for="name" class="form__label">
@@ -46,7 +44,7 @@ export default function Loginpage() {
                   <input
                     type="password"
                     id="password"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Password"
                   />
                   <label for="password" class="form__label">
@@ -64,10 +62,10 @@ export default function Loginpage() {
     </RadioGroup>
     </FormControl>      
 
-    <Button sx={{backgroundColor:'#E2C703',textTransform:'none', fontWeight:'600', color:'black',width:'fit-content', padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
-    <Stack direction={'row'} spacing={2} alignItems={'center'} sx={{fontSize:'10px'}}>
+    <Button sx={{backgroundColor:'#E2C703',fontWeight:'600', letterSpacing: '0.02em', fontSize:'16px', color:'black',textTransform:'none', width: {md:'20vw', sm:'30vw', xs:'100%'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
+    <Stack direction={'row'} spacing={2} alignItems={'center'} sx={{fontSize:'10px', flexDirection:{md:'row', sm:'row', xs:'column'}}}>
 
-    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'20px'}}href='/signup'>Sign up</a>
+    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/login'>Log In</a>
     </Stack>
         </Stack>
         </Card>

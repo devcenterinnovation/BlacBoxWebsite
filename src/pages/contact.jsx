@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material"
 import NavBar from "../component/layout/nav"
-import '../style/css/waitlistform.css'
+import '../style/css/waitlist/waitlistform.css'
 import {BsSquareFill} from "react-icons/bs"
 
 
