@@ -7,8 +7,8 @@
 }
 
 
-.background{
-    background: url(../../images/waitlist/bg.png);
+.bg2{
+    background: url(../../../images/waitlist/bg2.png);
     background-position:center;
     height:100vh;
     background-size:contain;
