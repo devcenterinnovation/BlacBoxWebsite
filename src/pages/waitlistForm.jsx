@@ -2,7 +2,7 @@ import React from 'react'
 import {
 Button, Grid, Stack, Card,
 } from "@mui/material"
-import '../style/css/waitlistform.css'
+import '../style/css/waitlist/waitlistform.css'
 import icon from '../images/signin/icon.png'
 
 export default function Waitlistform() {
@@ -54,7 +54,7 @@ export default function Waitlistform() {
                 </div>
       
 
-    <Button sx={{backgroundColor:'#E2C703', color:'black',width:{md:'20vw',xs:'100%', sm:'40vw'}, padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Submit</Button>
+    <Button sx={{backgroundColor:'#E2C703',textTransform:'none', fontWeight:'600', letterSpacing: '0.02em', fontSize:'16px', color:'black',width:{md:'20vw',xs:'100%', sm:'40vw'}, padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Submit</Button>
         </Stack>
         </Card>
       </Grid>

@@ -6,14 +6,6 @@
     margin:0;
 }
 
-/* 
-.background{
-    background: url(../../images/waitlist/bg.png);
-    background-position:left;
-    height:100vh;
-    background-size:contain;
-    background-repeat: no-repeat;
-} */
 
 .form__group {
     position: relative;

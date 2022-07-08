@@ -27,7 +27,7 @@ export default function Loginpage() {
         <a href='/' style={{color:'#E2C703'}}>Close</a>
         </Stack>
         </Grid>
-      <Grid item md={6} xs={6} sm={12} >
+      <Grid item md={6} xs={12} sm={12} >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
       <Typography sx={{fontWeight:'600', fontSize:'20px'}}>Sign Up</Typography>
@@ -35,7 +35,7 @@ export default function Loginpage() {
                   <input
                     type="text"
                     id="fullname"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Name"
                   />
                   <label for="name" class="form__label">
@@ -46,7 +46,7 @@ export default function Loginpage() {
                   <input
                     type="password"
                     id="password"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Password"
                   />
                   <label for="password" class="form__label">
@@ -64,10 +64,10 @@ export default function Loginpage() {
     </RadioGroup>
     </FormControl>      
 
-    <Button sx={{backgroundColor:'#E2C703',textTransform:'none', fontWeight:'600', color:'black',width:'fit-content', padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
-    <Stack direction={'row'} spacing={2} alignItems={'center'} sx={{fontSize:'10px'}}>
+    <Button sx={{backgroundColor:'#E2C703',fontWeight:'600', letterSpacing: '0.02em', fontSize:'16px', textTransform:'none', color:'black',width: {md:'20vw', sm:'30vw', xs:'100%'}, padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
+    <Stack  spacing={1} alignItems={'center'} sx={{fontSize:'10px', display:{md:'flex', xs:'column'}}}>
 
-    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'20px'}}href='/signup'>Sign up</a>
+    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/login'>Log In</a>
     </Stack>
         </Stack>
         </Card>
