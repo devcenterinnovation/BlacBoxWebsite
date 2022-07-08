@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-const typographyList = { h1: 54, h2: 46, h3: 39, h4: 31, h5: 23, h6: 18 }
+const typographyList = { h1: 54, h2: 46, h3: 39, h4: 31, h5: 23, h6: 19 }
 
 let AppTheme = {
   palette: {
