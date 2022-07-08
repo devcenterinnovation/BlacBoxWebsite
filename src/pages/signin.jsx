@@ -27,15 +27,15 @@ export default function Signinpage() {
 
         </Stack>
         </Grid>
-      <Grid item md={6}  sm={12} xs={12} >
+      <Grid item md={6}  >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
-      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log IN</Typography>
+      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log In</Typography>
         <div class="form__group">
                   <input
                     type="text"
                     id="fullname"
-                    class="form_field"
+                    class="form__field"
                     placeholder="Name"
                   />
                   <label for="name" class="form__label">
@@ -46,7 +46,7 @@ export default function Signinpage() {
                   <input
                     type="password"
                     id="password"
-                    class="form_field"
+                    class="form__field"
                     placeholder="Password"
                   />
                   <label for="password" class="form__label">
@@ -65,8 +65,8 @@ export default function Signinpage() {
     </FormControl>      
 <Stack spacing={2}>
 
-    <Button sx={{backgroundColor:'#E2C703',fontWeight:'600', letterSpacing: '0.02em', fontSize:'16px', color:'black',textTransform:'none', width: {md:'20vw', sm:'30vw', xs:'100%'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Log In</Button>
-    <Stack spacing={2} alignItems={'center'} sx={{fontSize:'10px', flexDirection:{xs:'column',md:'row', sm:'row'}}}>
+    <Button sx={{backgroundColor:'#E2C703', color:'black',textTransform:'none', width: {md:'20vw', sm:'30vw', xs:'fit-content'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
+    <Stack direction={'row'} spacing={1} alignItems={'center'} sx={{fontSize:'10px'}}>
 
     <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/signup'>Sign up</a>
     </Stack>
