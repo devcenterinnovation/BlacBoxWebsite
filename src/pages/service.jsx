@@ -39,7 +39,7 @@ export default function ServicePage() {
     <Box>
       <Box
         bgcolor="#272727"
-        sx={{backgroundImage:`url(${heroBg})`,backgroundPosition:"right",backgroundRepeat:"no-repeat",backgroundSize:"auto 100%"}}
+        sx={{backgroundImage:{xs:"",md:`url(${heroBg})`},backgroundPosition:"right",backgroundRepeat:"no-repeat",backgroundSize:"auto 100%"}}
         color="white"
       >
         <Box bgcolor={"rgba(17, 17, 17, 0.38)"}   px={{ xs: "38px", sm: "60px", md: "85px" }} >
@@ -80,8 +80,8 @@ export default function ServicePage() {
         pr={{xs:"23px", sm:"37px", md:"53px"}}
         mt={{ xs: "25px", sm: "40px", md: "57px" }}
       >
-        <Stack direction={{xs:"column-reverse",sm:"row"}} justifyContent={"space-between"}  alignItems={"center"}>
-          <Box width={"100%"} maxWidth={{sm:"351px", md:"498px"}}mt={{xs:"20px", sm:"33px", md:"0px"}} mr={{xs:"0", sm:"33px", md:"46px"}}>
+        <Stack direction={{xs:"column",sm:"row"}} justifyContent={"space-between"}  alignItems={"center"}>
+          <Box width={"100%"} maxWidth={{sm:"351px", md:"498px"}}mr={{xs:"0", sm:"33px", md:"46px"}}>
             <Typography variant="h3"> KYC Verification </Typography>
             <Typography
               mt={{ xs: "6px", sm: "10px", md: "14px" }}
@@ -107,16 +107,16 @@ export default function ServicePage() {
               </Button>
             </Box>
           </Box>
-          <Box width={"100%"} maxWidth={{sm:"396px", md:"561px"}}>
+          <Box width={"100%"} maxWidth={{sm:"396px", md:"561px"}}mt={{xs:"50px",md:"0px"}} >
             <img src={kycImage} alt="kyc_image" width="100%" />
           </Box>
         </Stack>
       </Box>
 
-      <Box mt={{ xs: "57px", sm: "92px", md: "130px" }} pr={{xs:"23px", sm:"37px", md:"53px"}}>
-      <Stack direction={{xs:"column-reverse",sm:"row"}} justifyContent={"space-between"}   >
-          <Box alignSelf={{sm:"flex-end"}} width={"100%"} maxWidth={{xs:"237px", sm:"379px", md:"537px"}} mr={{xs:"0", sm:"94px", md:"134px"}}> 
-            <Box width="100%" height={{xs:"53px", sm:"84px", md:"119px"}} bgcolor="#0D0D0D">
+      <Box mt={{ xs: "57px", sm: "92px", md: "130px" }} pr={{xs:"0", sm:"37px", md:"53px"}}>
+      <Stack direction="row" justifyContent={"space-between"}   >
+          <Box alignSelf={{sm:"flex-end"}} width={"100%"} maxWidth={{xs:"30px", sm:"379px", md:"537px"}} mr={{xs:"0", sm:"94px", md:"134px"}}> 
+            <Box width="100%" height={{xs:"172px", sm:"84px", md:"119px"}} bgcolor="#0D0D0D">
             </Box>
           </Box>
         
@@ -313,8 +313,7 @@ export default function ServicePage() {
         >
           <Typography variant="h2" fontWeight={"600"}>Bank Services</Typography>
           <Typography mt={{ xs: "3px", sm: "5px", md: "8px" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            seddoeiusmod tempor incididunt u
+          We offer a good number of services to assist you in managing your company's and your customers' banking transactions. 
           </Typography>
         </Box>
 
