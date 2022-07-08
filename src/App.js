@@ -6,6 +6,8 @@ import AboutPage from './pages/about';
 import Loginpage from './pages/signin';
 import Signuppage from './pages/signup';
 import ContactPage from './pages/contact';
+import Waitlist from './pages/waitlist';
+import Waitlistform from './pages/waitlistForm';
 import {  ThemeProvider } from '@mui/system';
 import { createTheme } from '@mui/material/styles';
 import AppTheme from './style/theme/main';
@@ -33,9 +35,11 @@ function App() {
             <Route path='about' element={<AboutPage />} />
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/doc' element={<DocumentationPage />} />
+          </Route>
           <Route path='/login' element={<Loginpage/>} />
           <Route path='/signup' element={<Signuppage />} />
-          </Route>
+          <Route path='/waitlist' element={<Waitlist />} />
+          <Route path='/form' element={<Waitlistform />} />
           {/* <Route path='/unit' element={<UnitPage />} /> */}
           {/* <Route path='*' element={<ContactPage />} /> */}
         </Routes>
