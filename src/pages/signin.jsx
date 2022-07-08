@@ -28,15 +28,15 @@ export default function Signinpage() {
 
         </Stack>
         </Grid>
-      <Grid item md={6}  sm={12} xs={12} >
+      <Grid item md={6}  >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
-      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log IN</Typography>
+      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log In</Typography>
         <div class="form__group">
                   <input
                     type="text"
                     id="fullname"
-                    class="form_field"
+                    class="form__field"
                     placeholder="Name"
                   />
                   <label for="name" class="form__label">
@@ -47,7 +47,7 @@ export default function Signinpage() {
                   <input
                     type="password"
                     id="password"
-                    class="form_field"
+                    class="form__field"
                     placeholder="Password"
                   />
                   <label for="password" class="form__label">
