@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+
+.background{
+    background: url(../../images/signin/bg.png);
+    background-position:left;
+    height:100vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-size: 20px;
+    color: #212121;
+    padding: 15px 0;
+    /* border-radius: 5px; */
+    background: transparent;
+    transition: border-color 0.2s;
+    border-bottom: 2px dotted black; 
+
+  }
+  
+  .form__field::placeholder {
+    color: black;
+    display:inline-block;
+    /* padding-left: 10px; */
+    font-size: 14px;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 10px;
+    cursor: text;
+    top: 20px;
+    left:10px;
+  }
+  
+
+  /* label,
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    background: white;
+    display: none;
+    top: 0;
+    bottom: 10;
+    margin-top: 5px;
+    left:60px;
+    transition: 4.4s;
+    font-size: 10px;
+    padding:0px 10px;
+
+  } */
+  
+  /* .form__field:focus ~ .form__label {
+    color: black;
+    display:inline-block;
+  } */
+  .form__field ~ .form__label {
+
+    /* color: #009788; */
+    display:none;
+  }
+  
+  /* .form__field:focus {
+    padding-bottom: 6px; 
+    border:none;
+    border: 2px dotted #009788; 
+  } */
