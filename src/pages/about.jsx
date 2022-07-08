@@ -31,12 +31,14 @@ export default function AboutPage() {
 
       <Stack direction={{xs:"column-reverse",md:"row"}}  justifyContent="space-between" alignItems={"center"} bgcolor={"#F6F6F6"} pt={{xs:"18px", sm:"28px", md:"40px"}} pb={{xs:"33px", sm:"53px", md:"75px"}} pr={{xs:"14px", sm:"22px", md:"32px"}} pl={{xs:"28px", sm:"45px", md:"63px"}}>
         <Box  width="100%" maxWidth={{ md:"498px"}} mr={{xs:"0px",  md:"66px"}} mt={{xs:"29px", sm:"47px", md:"0px"}}>
-            <Typography mb={{xs:"11px", sm:"17px", md:"24px"}} variant="h3">How We Stand Out</Typography>
+            <Typography mb={{xs:"11px", sm:"17px", md:"24px"}} variant="h3">How We Do It</Typography>
           <Stack spacing={{xs:"5px", sm:"9px", md:"12px"}}>
-            <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco l</Typography>
-            <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  Lorem ipsum dolor sit amet</Typography>
-            <Typography>, consectetur adipiscing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lLorem ipsum dolor sit amet, consectetur </Typography>
-            <Typography>adipiscing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lLorem ipsum dolor sit amet, consectetur adipiscing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ll</Typography>
+            <Typography sx={{fontSize: '14px', fontWeight: '600'}}>A system with a seamless integrated API</Typography>
+            <Typography>To create new accounts, send payments, confirm OTP and BVN, and get bank information, we use sophisticated APIs. Which are all necessary to make sure your company runs smoothly, and your customers always have a seamless experience.
+
+For physical and digital merchants, subscription services, software products, and storefronts, our integrations strengthen payments. These are methods by which we contribute to ensuring 
+that data security is unaltered and that no modifications or fraudulent activities take place.</Typography>
+          
           </Stack>
         </Box>
         <Box width="100%" maxWidth={{  md:"677px"}} >
@@ -52,7 +54,7 @@ export default function AboutPage() {
           {
             tools.map((item)=>(
             <Grid item xs={12} sm={6} key={item.title}>
-            <Box bgcolor={"white"} color="black" minHeight={{xs:"149px", sm:"238px", md:"337px"}} borderRadius={{xs:"3px", sm:"5px", md:"8px"}} pb={{xs:"13px", sm:"21px", md:"29px"}} pl={{xs:"14px", sm:"22px", md:"31px"}} pt={{xs:"22px", sm:"34px", md:"49px"}}>
+            <Box bgcolor={"#F5F4E6"} color="black" minHeight={{xs:"149px", sm:"238px", md:"337px"}} borderRadius={{xs:"3px", sm:"5px", md:"8px"}} pb={{xs:"13px", sm:"21px", md:"29px"}} pl={{xs:"14px", sm:"22px", md:"31px"}} pt={{xs:"22px", sm:"34px", md:"49px"}}>
               <Typography fontSize={{md:"19px"}} fontWeight="600">  {item.title} </Typography>
                 <Typography mt={{xs:"5px", sm:"9px", md:"12px"}} mb={{xs:"15px", sm:"24px", md:"34px"}}> {item.text} </Typography>
                 <Box mt={{xs:"15px", sm:"24px", md:"34px"}} height={{xs:"67px", sm:"107px", md:"152px"}} textAlign="center">

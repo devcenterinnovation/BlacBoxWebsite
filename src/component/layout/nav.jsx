@@ -15,7 +15,7 @@ const links = [
   {title:"Service ", to:"/service",},
   {title:"Contact Us  ", to:"/contact",},
   {title:"API Documentation  ", to:"/doc",},
-  {title:"Waitlist ", to:"/",},
+  {title:"Waitlist ", to:"/waitlist",},
 
 ]
 
