@@ -8,8 +8,6 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import icon from '../images/signin/icon.png'
-import {Link} from 'react-router-dom'
-// import AppTheme from '../style/theme/main';
 
 export default function Signinpage() {
   const [value, setValue] = React.useState('female');
@@ -21,14 +19,14 @@ export default function Signinpage() {
   return (
     <>
     <Grid className='background' container justifyContent={'flex-end'} px={4} >
-        <Grid item md={12} xs={12} >
+        <Grid item md={12} xs={12} sm={12}>
         <Stack direction ='row' justifyContent={'space-between'} alignItems='center'  sx={{width:'100%', }}>
         <img src={icon} alt='icon' width={'100px'}/>
-        <a href='/' style={{color:'#E2C703'}}>Close</a>
+        <a href='/' style={{color:'#E2C703', fontSize:'24px'}}>Close</a>
 
         </Stack>
         </Grid>
-      <Grid item md={6}  >
+      <Grid item md={6} sm={12} xs={12}  >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
       <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log In</Typography>
@@ -36,7 +34,7 @@ export default function Signinpage() {
                   <input
                     type="text"
                     id="fullname"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Name"
                   />
                   <label for="name" class="form__label">
@@ -47,7 +45,7 @@ export default function Signinpage() {
                   <input
                     type="password"
                     id="password"
-                    class="form__field"
+                    class="form_field"
                     placeholder="Password"
                   />
                   <label for="password" class="form__label">
