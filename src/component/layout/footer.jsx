@@ -10,10 +10,11 @@ import {
   Stack,
   Typography,
 } from "@mui/material"
+import { Link } from "react-router-dom"
 
 
 const companyLinks = [
-  { title: "About Us", to: "/" },
+  { title: "About Us", to: "/about" },
   { title: "Pricing", to: "/" },
   { title: "About Us ", to: "/" },
   { title: "Pricing", to: "/" },
@@ -21,7 +22,7 @@ const companyLinks = [
 
 const serviceLinks = [
   { title: "Integration", to: "/" },
-  { title: "API", to: "/" },
+  { title: "API", to: "/doc" },
   { title: "Support ", to: "/" },
   { title: "Developers Tool", to: "/" },
 ]
@@ -51,7 +52,10 @@ export default function AppFooter() {
               <Typography>Start building your fintech product with seamless APIs. Get started</Typography>
                </Box>
                <Box height={{xs:"37px", sm:"59px", md:"83px"}} width={{xs:"95px", sm:"151px", md:"215px"}}>
+                 <Link to="/signup" style={{textDecoration: "none"}}>
+                   
                 <Button  sx={{width:"100%",height:"100%"}} variant="contained" color="secondary"> Sign Up </Button>
+                 </Link>
                </Box>
           </Stack>
         </Box>

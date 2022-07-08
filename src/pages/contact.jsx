@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material"
 import NavBar from "../component/layout/nav"
-
+import '../style/css/waitlistform.css'
 import {BsSquareFill} from "react-icons/bs"
 
 
@@ -69,11 +69,11 @@ export default function ContactPage() {
         <Box mt={{xs:"33px", sm:"53px", md:"76px"}}>
         <Grid container>
           <Grid item xs={12} sm={5}>
-            <List>
-              {
+            <List>        
+              {        
                 serviceList.map((item)=>(
                   <ListItem key={item}>
-                    <BsSquareFill />
+                    <BsSquareFill />     
                     <ListItemText sx={{ml:{xs:"6px", sm:"10px", md:"15px"}}} primaryTypographyProps={{fontSize:{md:"19px"},fontWeight:"500"}}> {item} </ListItemText>
                   </ListItem>
                 ))
@@ -84,7 +84,48 @@ export default function ContactPage() {
             <Box >
               <Box bgcolor={"#111111"} color={"white"} maxWidth={{xs:"253px", sm:"404px", md:"573px"}} minHeight={{xs:"228px", sm:"364px", md:"516px"}} pl={{xs:"25px", sm:"40px", md:"57px"}} pt={{xs:"11px", sm:"18px", md:"25px"}} pb={{xs:"17px", sm:"27px", md:"38px"}} pr={{xs:"22px", sm:"35px", md:"50px"}}>
                 <Typography variant="h5" fontWeight={"600"}>Contact Form</Typography>
+                <Stack spacing={3}  px={2} >
+        <div class="form__group">
+                  <input
+                    type="text"
+                    id="fullname"
+                    class="form__field"
+                    placeholder="    Business Name"
+                  />
+                  <label for="name" class="form__label">
+                   Business Name
+                  </label>
+                </div>
+        <div class="form__group">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form__field"
+                    placeholder="Email"
+                  />
+                  <label for="Email" class="form__label">
+                    Email
+                  </label>
+                </div>
+        <div class="form__group">
+                  <label for="Company Name" class="form__label">
+                   Message
+                  </label> 
+                  <textarea
+                    type="text"
+                    id="company"
+                    class="message"
+                    placeholder=""
+                  />
+                </div>
+      
+
+    <Button sx={{backgroundColor:'#E2C703',fontSize:'16px',fontWeight:'600', color:'black',width:{md:'20vw',xs:'100%', sm:'40vw'}, padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>
+      Send Message</Button>
+        </Stack>
+
               </Box>
+              
             </Box>
 
           </Grid>

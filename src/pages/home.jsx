@@ -1,4 +1,5 @@
 import { Avatar, Box, Button, Stack, Typography } from "@mui/material"
+import { Link } from "react-router-dom"
 import AppTheme from "../style/theme/main"
 
 import {FiTrendingUp} from "react-icons/fi"
@@ -47,7 +48,7 @@ const testimonials = [
   {
     img:mxLogo,
     title: "Marchant: WallX",
-    text: "Lorem ipsum dolor sit amet, consectetur adipi scing elit, seddoeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimminim veniam, quis nostrud exercitation ullamc    orem ipsum dolor sit amet, consectadipiscing elit, seddoeiusmod tempor incididunt utlabore et dolore magna ",
+    text: "Utilizing Blackbox API implementations allowed us to create friendly and simple financial processes for our service users. This is one integration provider that offers a straightforward and thoroughly explained procedure for companies to use.",
   },
   {
     img:mcLogo,
@@ -57,7 +58,7 @@ const testimonials = [
   {
     img:ideatLogo,
     title: "Marchant: Ideate Zone",
-    text: "Start building your fintech product with seamless APIs. Get started!",
+    text: "Blackbox's user-friendly and comprehensive API methods gave us the freedom to easily solve every assimilation problem needed to run our business",
   },
 ]
 
@@ -89,7 +90,8 @@ export default function HomePage() {
             maxWidth={{ xs: "144px", sm: "230px", md: "326px" }}
             height={{ xs: "59px", md: "83px" }}
             mt={ { xs: "17px", sm: "27px", md: "39px" }}
-          >
+          ><Link to='/signup' style={{  textDecoration: "none"}}>
+
             <Button
               fullWidth
               sx={{
@@ -98,9 +100,10 @@ export default function HomePage() {
               }}
               color="secondary"
               variant="contained"
-            >
+              >
               Sign Up
             </Button>
+              </Link>
           </Box>
           </Box>
         </Box>

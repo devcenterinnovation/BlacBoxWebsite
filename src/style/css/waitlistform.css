@@ -46,10 +46,18 @@
   .form__field:placeholder-shown ~ .form__label {
     font-size: 10px;
     cursor: text;
+
     top: 20px;
     left:10px;
   }
-  
+.message{
+height: 150px;
+width: 100%;
+border: 2px dotted white;
+background-color: transparent;
+color: white;
+
+}  
 
   /* label,
   .form__field:focus ~ .form__label {
