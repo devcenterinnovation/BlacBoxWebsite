@@ -7,6 +7,7 @@ import {  ThemeProvider } from '@mui/system';
 import { createTheme } from '@mui/material/styles';
 import AppTheme from './style/theme/main';
 
+// import "@fontsource/montserrat/"
 import '@fontsource/montserrat/300.css';
 import '@fontsource/montserrat/400.css';
 import '@fontsource/montserrat/500.css';
@@ -21,7 +22,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainLayout />}>
             <Route index element={<HomePage />} />
-            {/* <Route path='about' element={<AboutPage />} /> */}
+            <Route path='about' element={<AboutPage />} />
           </Route>
             <Route path='signin' element={<Signinpage />} />
           <Route path='/login' element={<Loginpage />} />

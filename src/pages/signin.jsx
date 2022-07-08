@@ -30,7 +30,7 @@ export default function Signinpage() {
       <Grid item md={6}  >
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
-      <Typography sx={{fontWeight:'600', fontSize:'20px'}}>Log In</Typography>
+      <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Log In</Typography>
         <div class="form__group">
                   <input
                     type="text"
@@ -66,9 +66,9 @@ export default function Signinpage() {
 <Stack spacing={2}>
 
     <Button sx={{backgroundColor:'#E2C703', color:'black', width: {md:'20vw', sm:'30vw', xs:'fit-content'},padding:'20px', '&:hover':{backgroundColor:'#E2C703', color:'black' }}}>Sign Up</Button>
-    <Stack direction={'row'} spacing={2} alignItems={'center'} sx={{fontSize:'10px'}}>
+    <Stack direction={'row'} spacing={1} alignItems={'center'} sx={{fontSize:'10px'}}>
 
-    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'20px'}}href='/signup'>Sign up</a>
+    <Typography >Already have an account?</Typography> <a style={{color:'#E2C703',textDecoration:'none', fontSize:'16px'}}href='/signup'>Sign up</a>
     </Stack>
 </Stack>
         </Stack>
