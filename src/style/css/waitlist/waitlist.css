@@ -10,7 +10,17 @@
 .bg{
     background: url(../../../images/waitlist/bg.png);
     background-position:center;
-    height:100vh;
+    height:70vh;
+    /* background-size: auto; */
     background-size:contain;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+    .bg{
+        height: 50vh;
+        background-size:contain;
+        background-repeat: no-repeat;
+    
+    }
 }
