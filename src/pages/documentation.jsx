@@ -1,6 +1,8 @@
 import { Box, Button, Grid, List, Stack, Typography,  ListItem,
   ListItemText } from "@mui/material"
 import {BsSquareFill} from "react-icons/bs"
+import NavBar from "../component/layout/nav"
+import wheelImage from "../images/doc/doc_wheel.svg"
 const serviceList = [
   "Bank Services","KYC Verification","Payments and Wallet API’s","OTP’s NOtification SERvices","Virtual account Services"
 ]
@@ -8,16 +10,17 @@ const serviceList = [
 export default function DocumentationPage() {
   return (
     <Box>
+      <NavBar />
       <Stack direction={{xs:"column",md:"row"}} container minHeight={{xs:"240px", sm:"383px", md:"543px"}} >
-        <Box width={"100%"} maxWidth={{xs:"113px", sm:"180px", md:"255px"}}  alignSelf="flex-end">
-          
+        <Box width={"100%"} maxWidth={{xs:"113px", sm:"180px", md:"255px"}}  alignSelf="center">
+          <img src={wheelImage} alt="wheelimage " width="100%"/>
         </Box>
-        <Box maxWidth={{xs:"362px", sm:"578px", md:"820px"}} width="100%"  alignSelf="center" >
-          <Typography variant="h2" fontWeight={"600"} textAlign="center">
+        <Box maxWidth={{xs:"362px", sm:"578px", md:"820px"}} width="100%"  alignSelf="center" textAlign="center" >
+          <Typography variant="h2" fontWeight={"600"}>
             Well documented and <br/> easy-to-use APIs for
             <Typography textTransform={"uppercase"} component={"span"}variant="h2" fontWeight={"600"}  color="primary"> developers</Typography>
           </Typography>
-          <Button variant="contained" sx={{mt:{xs:"15px", sm:"17px", md:"25px"}}}>Read API doc</Button>
+          <Button  variant="contained" sx={{mt:{xs:"15px", sm:"17px", md:"25px"},width:"100%",fontSize:{xs:"16px",md:"23px"},height:{xs:"64px", md:"108px"},maxWidth:{xs:"200px", sm:"230px", md:"326px"}}}>Read API doc</Button>
         </Box>
       </Stack>
 
