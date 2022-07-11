@@ -53,8 +53,9 @@ export default function DocumentationPage() {
           maxWidth={{ md: "820px" }}
           width="100%"
           mt={{xs:"68px", sm:"100px", md:"153px"}}
-          ml={"-20px"}
+          ml={{xs:"0px",sm:"-20px"}}
           pr={"32px"}
+          pl={{xs:"32px",sm:"0px"}}
           textAlign="center"
         >
           <Typography fontSize={{xs:"20px", sm:"33px", md:"60px"}} lineHeight={{xs:"42px",md:"77px"}} fontWeight={"416"}>
@@ -68,7 +69,8 @@ export default function DocumentationPage() {
               mt: { xs: "15px", sm: "17px", md: "25px" },
               width: "100%",
               fontSize: { xs: "16px", md: "23px" },
-              height: { xs: "64px", md: "108px" },
+              textTransform:"capitalize",
+              height: { xs: "46px", md: "83px" },
               maxWidth: { xs: "200px", sm: "230px", md: "326px" },
             }}
           >
@@ -190,11 +192,13 @@ export default function DocumentationPage() {
                     <Button
                       sx={{
                         backgroundColor: "#E2C703",
-                        fontSize: { xs: "12px", sm: "16px" },
+                        fontSize: { xs: "12px"},
                         fontWeight: "600",
+                        width:"100%",
                         color: "black",
-                        width: { xs: "144px", sm: "230px", md: "326px" },
-                        padding: "20px",
+                        maxWidth:{xs:"158px", sm:"112px", md:"158px"},
+                        // px:"32px",
+                        height: "46px",
                         "&:hover": {
                           backgroundColor: "#E2C703",
                           color: "black",
