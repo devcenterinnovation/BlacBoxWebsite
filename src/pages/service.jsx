@@ -55,7 +55,7 @@ export default function ServicePage() {
           >
             <Typography variant="h1" fontWeight={"467"}>
               {" "}
-              Delivering a complete API solution that makes an impact
+              Delivering A Complete API Solution That  Makes An Iimpact
             </Typography>
             <Box mt={{ xs: "17px", sm: "27px", md: "39px" }}>
               <Button
