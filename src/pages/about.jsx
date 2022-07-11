@@ -24,7 +24,7 @@ const tools = [
 export default function AboutPage() {
   return (
     <Box>
-      <Box px={{ xs: "30px", md: "53px" }}>
+      <Box >
         <NavBar />
       </Box>
       <Box

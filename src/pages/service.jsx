@@ -42,11 +42,13 @@ export default function ServicePage() {
         sx={{backgroundImage:{xs:"",md:`url(${heroBg})`},backgroundPosition:"right",backgroundRepeat:"no-repeat",backgroundSize:"auto 100%"}}
         color="white"
       >
-        <Box bgcolor={"rgba(17, 17, 17, 0.38)"}   px={{ xs: "38px", sm: "60px", md: "85px" }} >
+        <Box bgcolor={"rgba(17, 17, 17, 0.38)"}   >
         <NavBar light />
           <Box
           width="100%"
           maxWidth={{ sm:"451px", md:"639px"}}
+          pl={{ xs: "38px", sm: "60px", md: "85px" }} 
+          pr={{ xs: "38px", sm: "0px"}} 
           bgcolor="rgba()"
             pt={{ xs: "67px", sm: "107px", md: "151px" }}
             pb={{ xs: "53px", sm: "84px", md: "119px" }}

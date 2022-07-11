@@ -24,13 +24,13 @@ export default function NavBar({light,...props}){
   return (
     <AppBar  position="relative" sx={{zIndex:"1",padding:0}} color="transparent"elevation={0}> 
         <Stack mt={{xs:"11px", sm:"18px", md:"25px"}} width={"100%"} direction={"row"} alignItems="center" justifyContent="space-between" >
-          <Box >
+          <Box  ml={{xs:"17px", sm:"27px", md:"38px"}}>
             <img src={light? logoLight: logoDark} alt="logo" width="100%" />
           </Box>
-          <Stack display={{xs:"none",md:"flex"}} justifyContent="flex-end" direction={"row"} spacing={{xs:"20px", sm:"33px", md:"46px"}}>
+          <Stack display={{xs:"none",md:"flex"}} justifyContent="flex-end" direction={"row"} pr={"10%"} spacing={{ md:"33px"}}>
             {
               links.map((item)=>(
-                <NavLink to={item.to} style={({isActive})=>({borderBottom:isActive?"1px solid #E2C703":"none"})}>
+                <NavLink to={item.to} style={({isActive})=>({borderBottom:isActive?"1px solid #E2C703":"none",textDecoration:"none"})}>
                   <Button href={item.to} sx={{color:light?"white":"black"}}> {item.title} </Button>
                 </NavLink>
               ))
