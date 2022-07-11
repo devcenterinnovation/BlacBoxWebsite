@@ -1,6 +1,6 @@
 import { AppBar, Button, Stack, IconButton } from "@mui/material";
 import { Box } from "@mui/system";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // import { BsChevronRight } from "react-icons/bs";
 
@@ -30,9 +30,9 @@ export default function NavBar({light,...props}){
           <Stack display={{xs:"none",md:"flex"}} justifyContent="flex-end" direction={"row"} spacing={{xs:"20px", sm:"33px", md:"46px"}}>
             {
               links.map((item)=>(
-                <Link to={item.to}>
+                <NavLink to={item.to} style={({isActive})=>({borderBottom:isActive?"1px solid #E2C703":"none"})}>
                   <Button href={item.to} sx={{color:light?"white":"black"}}> {item.title} </Button>
-                </Link>
+                </NavLink>
               ))
             }
           </Stack>

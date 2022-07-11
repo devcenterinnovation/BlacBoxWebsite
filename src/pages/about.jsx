@@ -29,7 +29,8 @@ export default function AboutPage() {
       </Box>
       <Box
         sx={{
-          background: { xs: "white", md: `url(${heroBg})` },
+          backgroundImage: { xs: "white", md: `url(${heroBg})` },
+          backgroundSize:"50%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: { xs: "center", sm: "right" },
         }}
