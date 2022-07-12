@@ -39,7 +39,8 @@ function App() {
           <Route path='/login' element={<Loginpage/>} />
           <Route path='/signup' element={<Signuppage />} />
           <Route path='/waitlist' element={<Waitlist />} />
-          <Route path='/form' element={<Waitlistform />} />
+          <Route path='/waitlist/form' element={<Waitlistform />} />
+
           {/* <Route path='/unit' element={<UnitPage />} /> */}
           {/* <Route path='*' element={<ContactPage />} /> */}
         </Routes>
