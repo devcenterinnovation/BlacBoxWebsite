@@ -16,7 +16,7 @@ import NavBar from "../component/layout/nav"
 import wheelImage from "../images/doc/doc_wheel.svg"
 import wheelImageMobile from "../images/doc/doc_wheel_mobile.svg"
 
-import '../style/css/doc.css'
+import "../style/css/doc.css"
 
 const serviceList = [
   "Bank Services",
@@ -27,10 +27,8 @@ const serviceList = [
 ]
 
 export default function DocumentationPage() {
-
-  const theme = useTheme();
-  const isSm = useMediaQuery(theme.breakpoints.down('md'));
-
+  const theme = useTheme()
+  const isSm = useMediaQuery(theme.breakpoints.down("md"))
 
   return (
     <Box>
@@ -45,7 +43,7 @@ export default function DocumentationPage() {
           left={{ xs: "-67px", sm: "-106px", md: "-151px" }}
           // top={{ xs: "30px", md: "99px" }}
           top={{ sm: "66px", md: "93px" }}
-          zIndex={{xs:"-1",md:"1"}}
+          zIndex={{ xs: "-1", md: "1" }}
           width={"100%"}
           maxWidth={{ xs: "323px", sm: "334px", md: "473px" }}
           height={{ xs: "323px", sm: "334px", md: "473px" }}

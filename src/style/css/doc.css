@@ -17,11 +17,27 @@
     transform:scale(2.1);
     left:-250px;
   }
-  70%{
-    transform:scale(1.9);
-    left:-200px;
+  50%{
+    transform:scale(2.1);
+    left:-250px;
   }
-  98%{
+  60%{
+    transform:scale(1.88);
+    left:-199px;
+  }
+  85%{
+    transform:scale(1.88);
+    left:-199px;
+  }
+  90%{
+    transform:scale(1);
+    left:35px;
+  }
+  95%{
+    transform:scale(1);
+    left:-10px;
+  }
+  /* 98%{
     transform:scale(1);
     left:10px;
   }
@@ -32,7 +48,7 @@
   100%{
     transform:scale(1);
     left:0px;
-  }
+  } */
 }
 
 #imageWheel {
@@ -45,8 +61,8 @@
 @media  (min-width:900px) {
   #imageWheel:hover {
     /* animation-name: "moveWheel"; */
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-duration: 4s;
+    /* animation-delay: 1s; */
     animation-iteration-count: infinite;
   }
   
