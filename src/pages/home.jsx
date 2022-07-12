@@ -346,7 +346,7 @@ export default function HomePage() {
                   <img src={item.img} alt={item.title + "logo"} height="100%" />
                 </Box>
                 <Box pb={"58px"}>
-                  <Typography> {item.text} </Typography>
+                  <Typography textAlign="justify"> {item.text} </Typography>
                 </Box>
               </Box>
             </Box>

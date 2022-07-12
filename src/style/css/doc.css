@@ -1,0 +1,53 @@
+
+@keyframes moveWheel {
+  5%{
+    transform:scale(2.1);
+    left:-250px;
+  }
+
+  10%{
+    transform:scale(2.01);
+    left:-240px;
+  }
+  15%{
+    transform:scale(2.1);
+    left:-250px;
+  }
+  30%{
+    transform:scale(2.1);
+    left:-250px;
+  }
+  70%{
+    transform:scale(1.9);
+    left:-200px;
+  }
+  98%{
+    transform:scale(1);
+    left:10px;
+  }
+  99%{
+    transform:scale(1);
+    left:-10px;
+  }
+  100%{
+    transform:scale(1);
+    left:0px;
+  }
+}
+
+#imageWheel {
+  /* transform:scale(1.9);
+    left:-230px; */
+  position:absolute;
+}
+
+
+@media  (min-width:900px) {
+  #imageWheel:hover {
+    /* animation-name: "moveWheel"; */
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+}

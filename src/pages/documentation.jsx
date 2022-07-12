@@ -16,6 +16,7 @@ import NavBar from "../component/layout/nav"
 import wheelImage from "../images/doc/doc_wheel.svg"
 import wheelImageMobile from "../images/doc/doc_wheel_mobile.svg"
 
+import '../style/css/doc.css'
 
 const serviceList = [
   "Bank Services",
@@ -41,24 +42,39 @@ export default function DocumentationPage() {
       >
         <Box
           position={{ xs: "absolute", md: "relative" }}
-          left={{xs:"-67px", sm:"-106px", md:"-151px"}}
-          top={{ xs: "30px", md: "99px" }}
-          zIndex="-1"
+          left={{ xs: "-67px", sm: "-106px", md: "-151px" }}
+          // top={{ xs: "30px", md: "99px" }}
+          top={{ sm: "66px", md: "93px" }}
+          zIndex={{xs:"-1",md:"1"}}
           width={"100%"}
           maxWidth={{ xs: "323px", sm: "334px", md: "473px" }}
+          height={{ xs: "323px", sm: "334px", md: "473px" }}
+          padding={{ xs: "7px", sm: "11px", md: "15px" }}
+          overflow="hidden"
         >
-          <img src={isSm ?  wheelImageMobile : wheelImage} alt="wheelimage " width="100%" />
+          <img
+            onMouseEnter={(e) => (e.target.style.animationName = "moveWheel")}
+            id="imageWheel"
+            src={isSm ? wheelImageMobile : wheelImage}
+            alt="wheelimage "
+            height="100%"
+          />
         </Box>
         <Box
           maxWidth={{ md: "820px" }}
           width="100%"
-          mt={{xs:"68px", sm:"100px", md:"153px"}}
-          ml={{xs:"0px",sm:"-20px"}}
+          mt={{ xs: "68px", sm: "100px", md: "153px" }}
+          ml={{ xs: "0px", md: "-151px" }}
+          // ml={{xs:"0px",sm:"-20px"}}
           pr={"32px"}
-          pl={{xs:"32px",sm:"0px"}}
+          pl={{ xs: "32px", sm: "0px" }}
           textAlign="center"
         >
-          <Typography fontSize={{xs:"20px", sm:"33px", md:"60px"}} lineHeight={{xs:"42px",md:"77px"}} fontWeight={"416"}>
+          <Typography
+            fontSize={{ xs: "20px", sm: "33px", md: "46px" }}
+            lineHeight={{ xs: "42px", md: "77px" }}
+            fontWeight={"416"}
+          >
             Simple-to-use
             <br /> API DOCUMENTATION
           </Typography>
@@ -69,7 +85,7 @@ export default function DocumentationPage() {
               mt: { xs: "15px", sm: "17px", md: "25px" },
               width: "100%",
               fontSize: { xs: "16px", md: "23px" },
-              textTransform:"capitalize",
+              textTransform: "capitalize",
               height: { xs: "46px", md: "83px" },
               maxWidth: { xs: "200px", sm: "230px", md: "326px" },
             }}
@@ -192,11 +208,11 @@ export default function DocumentationPage() {
                     <Button
                       sx={{
                         backgroundColor: "#E2C703",
-                        fontSize: { xs: "12px"},
+                        fontSize: { xs: "12px" },
                         fontWeight: "600",
-                        width:"100%",
+                        width: "100%",
                         color: "black",
-                        maxWidth:{xs:"158px", sm:"112px", md:"158px"},
+                        maxWidth: { xs: "158px", sm: "112px", md: "158px" },
                         // px:"32px",
                         height: "46px",
                         "&:hover": {
