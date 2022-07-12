@@ -18,14 +18,14 @@ export default function Loginpage() {
 
   return (
     <>
-    <Grid className='background' container justifyContent={'flex-end'} px={4}>
+    <Grid className='background' container justifyContent='flex-end' px={4}>
         <Grid item md={12} xs={12}>
         <Stack direction ='row' justifyContent={'space-between'} alignItems='center' px={2} sx={{paddingRight: {md:'50px', xs:'0px'}, width:'100%', }}>
         <img src={icon} alt='icon' width={'100px'}/>
         <a href='/' style={{color:'#E2C703', fontSize:'24px'}}>Close</a>
         </Stack>
         </Grid>
-      <Grid item md={6} xs={12} sm={12} >
+      <Grid item md={7} xs={12} sm={12}  sx={{ marginRight:{md:'80px', sm:'40px', xs:'0px'}}}>
         <Card sx={{boxShadow:'none',}}>
         <Stack spacing={2}  px={2}>
       <Typography sx={{fontWeight:'600', fontSize:'24px'}}>Sign Up</Typography>
