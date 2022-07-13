@@ -58,7 +58,8 @@ export default function ServicePage() {
             pr={{ xs: "38px", sm: "0px" }}
             bgcolor="rgba()"
             // pt={{ xs: "67px", sm: "107px", md: "151px" }}
-            pt={{xs:"37px", sm:"58px", md:"83px"}}
+            // pt={{xs:"37px", sm:"58px", md:"83px"}}
+            pt={{xs:"37px", md:"48px"}}
             pb={{ xs: "53px", sm: "84px", md: "119px" }}
           >
             <Typography variant="h1" fontWeight={"467"}>
@@ -141,9 +142,9 @@ export default function ServicePage() {
         mt={{ xs: "57px", sm: "92px", md: "130px" }}
         pr={{ xs: "0", sm: "37px", md: "53px" }}
       >
-        <Stack direction="row" justifyContent={"space-between"}>
+        <Stack direction="row" justifyContent={"space-between"} alignItems="center">
           <Box
-            alignSelf={{ sm: "flex-end" }}
+            // alignSelf={{ sm: "flex-end" }}
             width={"100%"}
             maxWidth={{ xs: "30px", sm: "379px", md: "537px" }}
             mr={{ xs: "0", sm: "94px", md: "134px" }}
@@ -159,7 +160,8 @@ export default function ServicePage() {
             width={"100%"}
             maxWidth={{ sm: "396px", md: "561px" }}
             pl={{ xs: "23px", sm: "0px" }}
-            mb={{ xs: "22px", sm: "35px", md: "49px" }}
+            // mb={{ xs: "22px", sm: "35px", md: "49px" }}
+            mb={"10px"}
           >
             <Typography variant="h3"> Payments and Wallet API’s </Typography>
             <Typography
