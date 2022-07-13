@@ -257,6 +257,84 @@ export default function ServicePage() {
             pb={{ xs: "14px", sm: "22px", md: "31px" }}
             pt={{ xs: "19px", sm: "30px", md: "42px" }}
             pl={{ xs: "18px", sm: "29px", md: "42px" }}
+            mr={{ xs: "25px", sm: "40px", md: "57px" }}
+            sx={{
+              width: "100%",
+              maxWidth: { sm: "272px", md: "386px" },
+              minHeight: { xs: "120px", sm: "192px", md: "272px" },
+              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
+              bgcolor: "#111111",
+              color: "white",
+            }}
+          >
+            <Stack justifyContent={"space-between"} height="100%">
+              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
+                <Typography variant="h5" fontWeight={"800"}>
+                  Bill Payment
+                </Typography>
+                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
+                  Bill payment is made simple with a virtual account mechanism
+                  to help your company and its customers thrive.
+                </Typography>
+              </Box>
+              <Box>
+                <Button
+                  sx={{
+                    color: "white",
+                    padding: "0",
+                    textTransform: "capitalize",
+                  }}
+                  endIcon={<FaArrowCircleRight />}
+                >
+                  {" "}
+                  Explore services
+                </Button>
+              </Box>
+            </Stack>
+          </Box>
+          <Box
+            pb={{ xs: "14px", sm: "22px", md: "31px" }}
+            pt={{ xs: "19px", sm: "30px", md: "42px" }}
+            pl={{ xs: "18px", sm: "29px", md: "42px" }}
+            mr={{ xs: "25px", sm: "40px", md: "57px" }}
+            sx={{
+              width: "100%",
+              maxWidth: { sm: "272px", md: "386px" },
+              minHeight: { xs: "120px", sm: "192px", md: "272px" },
+              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
+              bgcolor: "#111111",
+              color: "white",
+            }}
+          >
+            <Stack justifyContent={"space-between"} height="100%">
+              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
+                <Typography variant="h5" fontWeight={"800"}>
+                  Bill Payment
+                </Typography>
+                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
+                  Bill payment is made simple with a virtual account mechanism
+                  to help your company and its customers thrive.
+                </Typography>
+              </Box>
+              <Box>
+                <Button
+                  sx={{
+                    color: "white",
+                    padding: "0",
+                    textTransform: "capitalize",
+                  }}
+                  endIcon={<FaArrowCircleRight />}
+                >
+                  {" "}
+                  Explore services
+                </Button>
+              </Box>
+            </Stack>
+          </Box>
+          <Box
+            pb={{ xs: "14px", sm: "22px", md: "31px" }}
+            pt={{ xs: "19px", sm: "30px", md: "42px" }}
+            pl={{ xs: "18px", sm: "29px", md: "42px" }}
             mt={{ xs: "25px", sm: "0" }}
             sx={{
               width: "100%",

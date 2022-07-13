@@ -34,7 +34,7 @@ export default function AboutPage() {
           backgroundRepeat: "no-repeat",
           backgroundPosition: { xs: "center", sm: "right" },
         }}
-        px={{ xs: "30px", sm: "53px" }}
+        px={{ xs: "30px", md: "0px" }}
         pb={{ xs: "78px", md: "0" }}
       >
         <Stack
@@ -45,18 +45,19 @@ export default function AboutPage() {
           <Box
             width="100%"
             maxWidth={{ xs: "312px", sm: "498px", md: "706px" }}
-            mt={{ xs: "47px", sm: "75px", md: "107px" }}
-            height={{ xs: "241px", sm: "384px", md: "545px" }}
+            pt={{ xs: "47px", sm: "75px", md: "67px" }}
+            height={{ xs: "241px", sm: "384px", md: "663px" }}
             display={{ xs: "none", md: "block" }}
           >
-            <img src={heroImage} alt="hero_image" height="100%" />
+            <img src={heroImage} alt="hero_image" height="100%"  style={{maxHeight:"709px"}} />
           </Box>
           <Box
             width={"100%"}
             maxWidth={{ md: "630px" }}
             mt={{ xs: "51px", md: "218px" }}
             textAlign={{ xs: "center", md: "left" }}
-            ml={{ xs: "0", sm: "-20px", md: "-129px" }}
+            ml={{ xs: "0", md: "-129px" }}
+            mr={{xs:"18px", sm:"29px", md:"41px"}}
           >
             <Typography variant="h1">
               Simple APIs solution to power your business

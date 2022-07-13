@@ -306,7 +306,7 @@ export default function HomePage() {
             <Box
               key={item.title}
               width={"100%"}
-              bgcolor="#F9F9F9"
+              // bgcolor="#F9F9F9"
               maxWidth={{ md: "373px" }}
               minHeight={{ xs: "199px", sm: "317px", md: "450px" }}
               mt={{ xs: "50px", sm: "44px", md: "0" }}
