@@ -39,7 +39,9 @@ export default function NavBar({ light, ...props }) {
         justifyContent="space-between"
       >
         <Box ml={{ xs: "10px", sm: "16px", md: "23px" }}>
-          <img src={light ? logoLight : logoDark} alt="logo" width="100%" />
+          <NavLink to={"/"} style={{ textDecoration: "none" }}>
+            <img src={light ? logoLight : logoDark} alt="logo" width="100%" />
+          </NavLink>
         </Box>
         <Stack
           display={{ xs: "none", md: "flex" }}
