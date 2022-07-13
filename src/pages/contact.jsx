@@ -19,9 +19,10 @@ import heroImage from "../images/contact/contact_hero.svg"
 const serviceList = [
   "Bank Services",
   "KYC Verification",
+  "CAC Verification",
   "Payments and Wallet API’s",
-  "OTP’s NOtification SERvices",
-  "Virtual account Services",
+  "OTP’s Notification Services",
+  "Virtual Account Services",
 ]
 
 export default function ContactPage() {
