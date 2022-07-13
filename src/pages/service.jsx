@@ -28,6 +28,14 @@ const bankServices = [
   },
 ]
 
+
+const services = [
+  {title:"Bill Payment",text:"Bill payment is made simple with a virtual account mechanism to help your company and its customers thrive."},
+  {title:"Debit Cards",text:"Create virtual cards that can be used anywhere in the world. Develop, initiate, and maintain your cards from any place."},
+  {title:"Virtual Accounts",text:"Generating of virtual abandoned accounts for your customers"},
+  {title:"Phone Number Verification",text:"Check who is behind a phone number as part of your KYC processes"},
+]
+
 export default function ServicePage() {
   return (
     <Box>
@@ -49,7 +57,8 @@ export default function ServicePage() {
             pl={{ xs: "38px", sm: "60px", md: "85px" }}
             pr={{ xs: "38px", sm: "0px" }}
             bgcolor="rgba()"
-            pt={{ xs: "67px", sm: "107px", md: "151px" }}
+            // pt={{ xs: "67px", sm: "107px", md: "151px" }}
+            pt={{xs:"37px", sm:"58px", md:"83px"}}
             pb={{ xs: "53px", sm: "84px", md: "119px" }}
           >
             <Typography variant="h1" fontWeight={"467"}>
@@ -206,37 +215,43 @@ export default function ServicePage() {
       >
         <Box mb={{ xs: "20px", sm: "32px", md: "45px" }}>
           <Typography variant="h3" fontWeight={"600"} textAlign="center">
-            Virtual Accounts
+            Explore Other Services....
           </Typography>
         </Box>
-        <Stack
-          direction={{ xs: "column", sm: "row" }}
+        <Grid 
+        container
+          // direction={{ xs: "column", sm: "row" }}
           justifyContent="center"
-          px={"4px"}
+          // flexWrap={"wrap"}
+          columnGap={{xs:"25px", sm:"40px", md:"57px"}}
+          rowGap={{xs:"25px", sm:"40px", md:"57px"}}
+          px={{xs:"35px"}}
+          
         >
-          <Box
-            pb={{ xs: "14px", sm: "22px", md: "31px" }}
-            pt={{ xs: "19px", sm: "30px", md: "42px" }}
-            pl={{ xs: "18px", sm: "29px", md: "42px" }}
-            mr={{ xs: "25px", sm: "40px", md: "57px" }}
+          {
+            services.map((item)=>(
+            <Grid item
+            xs={12} md={6}
+            key={item.title}
+            // pb={{ xs: "14px", sm: "22px", md: "31px" }}
+            // pt={{ xs: "19px", sm: "30px", md: "42px" }}
+            py={"42px"}
+            // pl={{ xs: "18px", sm: "29px", md: "42px" }}
+            px={{xs:"35px",  md:"42px"}}
+            // mr={{ xs: "25px", sm: "40px", md: "57px" }}
             sx={{
               width: "100%",
-              maxWidth: { sm: "272px", md: "386px" },
+              maxWidth: {   md: "386px" },
               minHeight: { xs: "120px", sm: "192px", md: "272px" },
-              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
+              borderRadius: "8px" ,
               bgcolor: "#111111",
               color: "white",
             }}
           >
             <Stack justifyContent={"space-between"} height="100%">
               <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
-                <Typography variant="h5" fontWeight={"800"}>
-                  Bill Payment
-                </Typography>
-                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
-                  Bill payment is made simple with a virtual account mechanism
-                  to help your company and its customers thrive.
-                </Typography>
+                <Typography variant="h5" fontWeight={"800"}> {item.title} </Typography>
+                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}> {item.text} </Typography>
               </Box>
               <Box>
                 <Button
@@ -252,125 +267,11 @@ export default function ServicePage() {
                 </Button>
               </Box>
             </Stack>
-          </Box>
-          <Box
-            pb={{ xs: "14px", sm: "22px", md: "31px" }}
-            pt={{ xs: "19px", sm: "30px", md: "42px" }}
-            pl={{ xs: "18px", sm: "29px", md: "42px" }}
-            mr={{ xs: "25px", sm: "40px", md: "57px" }}
-            sx={{
-              width: "100%",
-              maxWidth: { sm: "272px", md: "386px" },
-              minHeight: { xs: "120px", sm: "192px", md: "272px" },
-              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
-              bgcolor: "#111111",
-              color: "white",
-            }}
-          >
-            <Stack justifyContent={"space-between"} height="100%">
-              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
-                <Typography variant="h5" fontWeight={"800"}>
-                  Bill Payment
-                </Typography>
-                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
-                  Bill payment is made simple with a virtual account mechanism
-                  to help your company and its customers thrive.
-                </Typography>
-              </Box>
-              <Box>
-                <Button
-                  sx={{
-                    color: "white",
-                    padding: "0",
-                    textTransform: "capitalize",
-                  }}
-                  endIcon={<FaArrowCircleRight />}
-                >
-                  {" "}
-                  Explore services
-                </Button>
-              </Box>
-            </Stack>
-          </Box>
-          <Box
-            pb={{ xs: "14px", sm: "22px", md: "31px" }}
-            pt={{ xs: "19px", sm: "30px", md: "42px" }}
-            pl={{ xs: "18px", sm: "29px", md: "42px" }}
-            mr={{ xs: "25px", sm: "40px", md: "57px" }}
-            sx={{
-              width: "100%",
-              maxWidth: { sm: "272px", md: "386px" },
-              minHeight: { xs: "120px", sm: "192px", md: "272px" },
-              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
-              bgcolor: "#111111",
-              color: "white",
-            }}
-          >
-            <Stack justifyContent={"space-between"} height="100%">
-              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
-                <Typography variant="h5" fontWeight={"800"}>
-                  Bill Payment
-                </Typography>
-                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
-                  Bill payment is made simple with a virtual account mechanism
-                  to help your company and its customers thrive.
-                </Typography>
-              </Box>
-              <Box>
-                <Button
-                  sx={{
-                    color: "white",
-                    padding: "0",
-                    textTransform: "capitalize",
-                  }}
-                  endIcon={<FaArrowCircleRight />}
-                >
-                  {" "}
-                  Explore services
-                </Button>
-              </Box>
-            </Stack>
-          </Box>
-          <Box
-            pb={{ xs: "14px", sm: "22px", md: "31px" }}
-            pt={{ xs: "19px", sm: "30px", md: "42px" }}
-            pl={{ xs: "18px", sm: "29px", md: "42px" }}
-            mt={{ xs: "25px", sm: "0" }}
-            sx={{
-              width: "100%",
-              maxWidth: { sm: "272px", md: "386px" },
-              minHeight: { xs: "120px", sm: "192px", md: "272px" },
-              borderRadius: { xs: "3px", sm: "5px", md: "8px" },
-              bgcolor: "#111111",
-              color: "white",
-            }}
-          >
-            <Stack justifyContent={"space-between"} height="100%">
-              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
-                <Typography variant="h5" fontWeight={"800"}>
-                  Debit Cards
-                </Typography>
-                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
-                  Create virtual cards that can be used anywhere in the world.
-                  Develop, initiate, and maintain your cards from any place.
-                </Typography>
-              </Box>
-              <Box>
-                <Button
-                  sx={{
-                    color: "white",
-                    padding: "0",
-                    textTransform: "capitalize",
-                  }}
-                  endIcon={<FaArrowCircleRight />}
-                >
-                  {" "}
-                  Explore services
-                </Button>
-              </Box>
-            </Stack>
-          </Box>
-        </Stack>
+          </Grid>
+
+            ))
+          }
+        </Grid>
       </Box>
 
       <Box mt={{ xs: "82px", sm: "131px", md: "185px" }}>

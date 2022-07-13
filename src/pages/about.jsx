@@ -78,7 +78,8 @@ export default function AboutPage() {
         justifyContent="space-between"
         alignItems={"center"}
         bgcolor={"#F6F6F6"}
-        pt={{ xs: "18px", sm: "28px", md: "40px" }}
+        // pt={{ xs: "18px", sm: "28px", md: "40px" }}
+        pt={{xs:"30px", sm:"48px", md:"68px"}}
         pb={{ xs: "0px", md: "75px" }}
         pr={{ xs: "14px", sm: "22px", md: "32px" }}
         pl={{ xs: "28px", sm: "45px", md: "63px" }}

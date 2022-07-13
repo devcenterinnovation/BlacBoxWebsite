@@ -14,7 +14,7 @@ import NavBar from "../component/layout/nav"
 import "../style/css/waitlist/waitlistform.css"
 import { BsSquareFill } from "react-icons/bs"
 
-import heroImage from "../images/contact/contact_hero.svg"
+import heroImage from "../images/contact/contact_hero_2.svg"
 
 const serviceList = [
   "Bank Services",
