@@ -223,10 +223,10 @@ export default function ContactPage() {
                         type="text"
                         id="fullname"
                         class="form__field"
-                        placeholder="    Business Name"
+                        placeholder="Business Name"
                       />
                       <label for="name" class="form__label">
-                        Business Name
+                     Business Name
                       </label>
                     </div>
                     <div class="form__group">
@@ -241,7 +241,7 @@ export default function ContactPage() {
                       </label>
                     </div>
                     <div class="form__group">
-                      <label for="Company Name" class="form__label">
+                      <label for="Company Name" class="form__labels">
                         Message
                       </label>
                       <textarea

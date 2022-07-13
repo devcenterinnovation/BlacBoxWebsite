@@ -175,7 +175,7 @@ export default function DocumentationPage() {
                         type="text"
                         id="fullname"
                         class="form__field"
-                        placeholder="    Business Name"
+                        placeholder="Business Name"
                       />
                       <label for="name" class="form__label">
                         Business Name
