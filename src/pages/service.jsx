@@ -28,12 +28,23 @@ const bankServices = [
   },
 ]
 
-
 const services = [
-  {title:"Bill Payment",text:"Bill payment is made simple with a virtual account mechanism to help your company and its customers thrive."},
-  {title:"Debit Cards",text:"Create virtual cards that can be used anywhere in the world. Develop, initiate, and maintain your cards from any place."},
-  {title:"Virtual Accounts",text:"Generating of virtual abandoned accounts for your customers"},
-  {title:"Phone Number Verification",text:"Check who is behind a phone number as part of your KYC processes"},
+  {
+    title: "Bill Payment",
+    text: "Bill payment is made simple with a virtual account mechanism to help your company and its customers thrive.",
+  },
+  {
+    title: "Debit Cards",
+    text: "Create virtual cards that can be used anywhere in the world. Develop, initiate, and maintain your cards from any place.",
+  },
+  {
+    title: "Virtual Accounts",
+    text: "Generating of virtual abandoned accounts for your customers",
+  },
+  {
+    title: "Phone Number Verification",
+    text: "Check who is behind a phone number as part of your KYC processes",
+  },
 ]
 
 export default function ServicePage() {
@@ -59,11 +70,14 @@ export default function ServicePage() {
             bgcolor="rgba()"
             // pt={{ xs: "67px", sm: "107px", md: "151px" }}
             // pt={{xs:"37px", sm:"58px", md:"83px"}}
-            pt={{xs:"37px", md:"48px"}}
+            pt={{ xs: "37px", md: "48px" }}
             pb={{ xs: "53px", sm: "84px", md: "119px" }}
           >
-            <Typography fontSize={{xs:"31px", sm:"38px", md:"48px"}}  fontWeight={"467"}>
-              {" "} 
+            <Typography
+              fontSize={{ xs: "31px", sm: "38px", md: "48px" }}
+              fontWeight={"467"}
+            >
+              {" "}
               Delivering A Complete API Solution That Makes An Iimpact
             </Typography>
             <Box mt={{ xs: "17px", sm: "27px", md: "39px" }}>
@@ -142,7 +156,11 @@ export default function ServicePage() {
         mt={{ xs: "57px", sm: "92px", md: "130px" }}
         pr={{ xs: "0", sm: "37px", md: "53px" }}
       >
-        <Stack direction="row" justifyContent={"space-between"} alignItems="center">
+        <Stack
+          direction="row"
+          justifyContent={"space-between"}
+          alignItems="center"
+        >
           <Box
             // alignSelf={{ sm: "flex-end" }}
             width={"100%"}
@@ -220,60 +238,68 @@ export default function ServicePage() {
             Explore Other Services....
           </Typography>
         </Box>
-        <Grid 
-        container
-          // direction={{ xs: "column", sm: "row" }}
-          justifyContent="center"
-          // flexWrap={"wrap"}
-          columnGap={{xs:"25px", sm:"40px", md:"57px"}}
-          rowGap={{xs:"25px", sm:"40px", md:"57px"}}
-          px={{xs:"35px"}}
-          
-        >
-          {
-            services.map((item)=>(
-            <Grid item
-            xs={12} md={6}
-            key={item.title}
-            // pb={{ xs: "14px", sm: "22px", md: "31px" }}
-            // pt={{ xs: "19px", sm: "30px", md: "42px" }}
-            py={"42px"}
-            // pl={{ xs: "18px", sm: "29px", md: "42px" }}
-            px={{xs:"35px",  md:"42px"}}
-            // mr={{ xs: "25px", sm: "40px", md: "57px" }}
-            sx={{
-              width: "100%",
-              maxWidth: {   md: "386px" },
-              minHeight: { xs: "120px", sm: "192px", md: "272px" },
-              borderRadius: "8px" ,
-              bgcolor: "#111111",
-              color: "white",
-            }}
-          >
-            <Stack justifyContent={"space-between"} height="100%">
-              <Box width={"100%"} maxWidth={{ sm: "169px", md: "239px" }}>
-                <Typography variant="h5" fontWeight={"800"}> {item.title} </Typography>
-                <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}> {item.text} </Typography>
-              </Box>
-              <Box>
-                <Button
-                  sx={{
-                    color: "white",
-                    padding: "0",
-                    textTransform: "capitalize",
-                  }}
-                  endIcon={<FaArrowCircleRight />}
-                >
-                  {" "}
-                  Explore services
-                </Button>
-              </Box>
-            </Stack>
-          </Grid>
 
-            ))
-          }
-        </Grid>
+        <Box
+          px={"35px"}
+          maxWidth={{ xs: "367px", sm: "585px", md: "887px" }}
+          margin="auto"
+        >
+          <Grid container spacing={{ xs: "25px", sm: "40px", md: "57px" }}>
+            {services.map((item) => (
+              <Grid
+                item
+                xs={12}
+                md={6}
+                key={item.title}
+                // pb={{ xs: "14px", sm: "22px", md: "31px" }}
+                // pt={{ xs: "19px", sm: "30px", md: "42px" }}
+              >
+                <Box
+                  py={"42px"}
+                  // pl={{ xs: "18px", sm: "29px", md: "42px" }}
+                  px={{ xs: "35px", md: "42px" }}
+                  // mr={{ xs: "25px", sm: "40px", md: "57px" }}
+                  sx={{
+                    width: "100%",
+                    maxWidth: { md: "386px" },
+                    borderRadius: "8px",
+                    bgcolor: "#111111",
+                    color: "white",
+                  }}
+                >
+                  <Stack
+                    justifyContent={"space-between"}
+                    minHeight={{ sm: "108px", md: "188px" }}
+                  >
+                    <Box width={"100%"} maxWidth={{ md: "239px" }}>
+                      <Typography variant="h5" fontWeight={"800"}>
+                        {" "}
+                        {item.title}{" "}
+                      </Typography>
+                      <Typography mt={{ xs: "4px", sm: "7px", md: "9px" }}>
+                        {" "}
+                        {item.text}{" "}
+                      </Typography>
+                    </Box>
+                    <Box mt={"8px"}>
+                      <Button
+                        sx={{
+                          color: "white",
+                          padding: "0",
+                          textTransform: "capitalize",
+                        }}
+                        endIcon={<FaArrowCircleRight />}
+                      >
+                        {" "}
+                        Explore services
+                      </Button>
+                    </Box>
+                  </Stack>
+                </Box>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Box>
 
       <Box mt={{ xs: "82px", sm: "131px", md: "185px" }}>
