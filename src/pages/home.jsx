@@ -122,7 +122,7 @@ export default function HomePage() {
             <Box
               display={"flex"}
               alignItems="center"
-              pr={{ xs: "86px", sm: "83px", md: "117px" }}
+              pr={{ xs: "28px", sm: "83px", md: "117px" }}
               pt={{ xs: "26px", sm: "41px", md: "59px" }}
               pb={{ xs: "22px", sm: "34px", md: "49px" }}
               height={{ xs: "387px", sm: "402px", md: "570px" }}
@@ -133,13 +133,13 @@ export default function HomePage() {
                 py={{ xs: "10px", sm: "3px", md: "5px" }}
                 px={{ xs: "10px", sm: "6px", md: "8px" }}
                 pr={{ xs: "0px" }}
-                ml={{ xs: "-54px", sm: "-56px", md: "-80px" }}
+                ml={{ xs: "-22px", sm: "-56px", md: "-80px" }}
               >
                 <img
                   src={heroImage}
                   alt="home_hero"
                   width={"100%"}
-                  height="100%"
+                  // height="100%"
                 />
               </Box>
             </Box>

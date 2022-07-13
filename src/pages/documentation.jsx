@@ -21,9 +21,10 @@ import "../style/css/doc.css"
 const serviceList = [
   "Bank Services",
   "KYC Verification",
+  "CAC Verification",
   "Payments and Wallet API’s",
-  "OTP’s NOtification SERvices",
-  "Virtual account Services",
+  "OTP’s Notification Services",
+  "Virtual Account Services",
 ]
 
 export default function DocumentationPage() {
@@ -78,6 +79,7 @@ export default function DocumentationPage() {
           </Typography>
           <Button
             href="https://blacbox.readme.io/reference/authentication"
+            target="_blank"
             variant="contained"
             sx={{
               mt: { xs: "15px", sm: "17px", md: "25px" },

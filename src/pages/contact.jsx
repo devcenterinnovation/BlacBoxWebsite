@@ -7,6 +7,8 @@ import {
   ListItemText,
   Stack,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material"
 import NavBar from "../component/layout/nav"
 import "../style/css/waitlist/waitlistform.css"
@@ -23,9 +25,14 @@ const serviceList = [
 ]
 
 export default function ContactPage() {
+
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"))
+
   return (
     <Box>
-      <NavBar />
+      <Box overflow={"hidden"} sx={{background:{xs:`url(${heroImage})`,md:"white",}}}  color={{xs:"white",md:"black"}}  pb={{xs:"39px", md:"0"}}>
+        <NavBar light={isMobile} />
       <Box
         display={"flex"}
         pt={{ xs: "57px", sm: "90px", md: "128px" }}
@@ -43,8 +50,8 @@ export default function ContactPage() {
               <Box
                 borderRadius={{ xs: "3px", sm: "5px", md: "8px" }}
                 sx={{ filter: "drop-shadow(-5px 7px 6px rgba(0, 0, 0, 0.15))" }}
-                bgcolor={"#111111"}
-                color="white"
+                bgcolor={{xs:"white",md:"#111111"}}
+                color={{xs:"#111111",md:"white"}}
                 width="100%"
                 minWidth={{ xs: "140px", sm: "224px", md: "317px" }}
                 mr={{ xs: "18px", sm: "28px", md: "40px" }}
@@ -89,8 +96,8 @@ export default function ContactPage() {
               <Box
                 borderRadius={{ xs: "3px", sm: "5px", md: "8px" }}
                 sx={{ filter: "drop-shadow(-5px 7px 6px rgba(0, 0, 0, 0.15))" }}
-                bgcolor={"#111111"}
-                color="white"
+                bgcolor={{xs:"white",md:"#111111"}}
+                color={{xs:"#111111",md:"white"}}
                 width="100%"
                 minWidth={{ xs: "140px", sm: "224px", md: "317px" }}
                 mt={{ xs: "18px", sm: "0" }}
@@ -139,12 +146,14 @@ export default function ContactPage() {
           mb={{ xs: "-37px", sm: "-59px", md: "-84px" }}
           height={{ xs: "184px", sm: "294px", md: "417px" }}
           display={{ xs: "none", md: "block" }}
-          zIndex={-1}
+          // zIndex={-1}
           width={{ xs: "340px", sm: "543px", md: "769px" }}
           ml={{ xs: "-46px", sm: "-73px", md: "-104px" }}
         >
           <img src={heroImage} alt="hero_img" height="100%" />
         </Box>
+      </Box>
+
       </Box>
 
       <Box
