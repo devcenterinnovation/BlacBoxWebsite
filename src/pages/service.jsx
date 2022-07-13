@@ -62,7 +62,7 @@ export default function ServicePage() {
             pt={{xs:"37px", md:"48px"}}
             pb={{ xs: "53px", sm: "84px", md: "119px" }}
           >
-            <Typography fontSize={{xs:"31px", sm:"38px", md:"49px"}}  fontWeight={"467"}>
+            <Typography fontSize={{xs:"31px", sm:"38px", md:"48px"}}  fontWeight={"467"}>
               {" "} 
               Delivering A Complete API Solution That Makes An Iimpact
             </Typography>
