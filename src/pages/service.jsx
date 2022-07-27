@@ -7,7 +7,7 @@ import heroBg from "../images/service/service_hero.svg"
 import kycImage from "../images/service/service_kyc.svg"
 import otpImage from "../images/service/service_otp.svg"
 import serviceImage from "../images/service/services.svg"
-import { NavLink } from "react-router-dom"
+// import { NavLink } from "react-router-dom"
 
 const bankServices = [
   {
@@ -16,7 +16,7 @@ const bankServices = [
   },
   {
     title: "Bank Transfers",
-    text: "Use our computer-controlled unification and API to control a streamlined transfer process and ensure your customers’ complete transfers without dispute.",
+    text: "Use our computer-controlled unification and API to control a streamlined transfer process and ensure your customers complete transfers without dispute.",
   },
   {
     title: "Recurring Payments",
@@ -24,7 +24,7 @@ const bankServices = [
   },
   {
     title: "Verification of Bank Statements",
-    text: "Help with the proofing of bank records and details",
+    text: "Help with the proofing of bank records and details.",
   },
 ]
 
@@ -39,11 +39,11 @@ const services = [
   },
   {
     title: "Virtual Accounts",
-    text: "Generating of virtual abandoned accounts for your customers",
+    text: "Generating of virtual abandoned accounts for your customers.",
   },
   {
     title: "Phone Number Verification",
-    text: "Check who is behind a phone number as part of your KYC processes",
+    text: "Check who is behind a phone number as part of your KYC processes.",
   },
 ]
 
@@ -78,12 +78,14 @@ export default function ServicePage() {
               fontWeight={"467"}
             >
               {" "}
-              Delivering A Complete API Solution That Makes An Iimpact
+              Delivering A Complete API Solution That Makes An Impact
             </Typography>
             <Box mt={{ xs: "17px", sm: "27px", md: "39px" }}>
-              <NavLink to={"/signup"} style={{ textDecoration: "none" }}>
+              {/* <NavLink to={"/signup"} style={{ textDecoration: "none" }}> */}
                 <Button
                   fullWidth
+                  style={{textDecoration: 'none'}}
+                  href="https://portal.blacbox.app/"
                   sx={{
                     maxWidth: { xs: "144px", sm: "230px", md: "326px" },
                     height: { xs: "37px", sm: "59px", md: "83px" },
@@ -95,7 +97,7 @@ export default function ServicePage() {
                 >
                   Sign Up
                 </Button>
-              </NavLink>
+              {/* </NavLink> */}
             </Box>
           </Box>
           <Grid item xs={12} sm={6}></Grid>
@@ -382,7 +384,7 @@ export default function ServicePage() {
           </Typography>
           <Typography mt={{ xs: "3px", sm: "5px", md: "8px" }}>
             We offer a good number of services to assist you in managing your
-            company's and your customers' banking transactions.
+            company and your customers banking transactions.
           </Typography>
         </Box>
 

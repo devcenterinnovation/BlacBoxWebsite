@@ -63,11 +63,11 @@ export default function AboutPage() {
               Simple APIs solution to power your business
             </Typography>
             <Typography mt={{ xs: "40px", md: "13px" }}>
-              Blackbox is a multi-API system that delivers data on various
+              Blacbox is a multi-API system that delivers data on various
               services to help your business grow faster. We guarantee
               coordinates where your company can connect with existing
               customers, get new customers, develop business insights, and
-              increase revenue
+              increase revenue.
             </Typography>
           </Box>
         </Stack>

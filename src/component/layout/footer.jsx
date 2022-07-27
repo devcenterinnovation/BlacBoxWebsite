@@ -13,28 +13,28 @@ import {
 } from "@mui/material"
 import { GrFacebook, GrLinkedin, GrTwitter } from "react-icons/gr"
 import { AiFillInstagram } from "react-icons/ai"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import logo from "../../images/general/logo.svg"
 
 const companyLinks = [
-  { title: "About Us", to: "/about" },
-  { title: "Pricing", to: "/" },
-  { title: "About Us ", to: "/" },
-  { title: "Pricing", to: "/" },
+  { title: "Customer", to: "/about" },
+  { title: "Entreprise", to: "/" },
+  { title: "Partners ", to: "/" },
+  { title: "Jobs", to: "/" },
 ]
 
 const serviceLinks = [
-  { title: "Integration", to: "/" },
-  { title: "API", to: "/doc" },
-  { title: "Support ", to: "/" },
-  { title: "Developers Tool", to: "/" },
+  { title: "Documentation", to: "/doc" },
+  { title: "API References", to: "/" },
+  { title: "API Status ", to: "/" },
+  { title: "Pricing", to: "/" },
 ]
 
 const resourceLinks = [
-  { title: "Card Service", to: "/" },
-  { title: "Developers Tool", to: "/" },
-  { title: "Developers Tool", to: "/" },
-  { title: "Developers Tool", to: "/" },
+  { title: "Support", to: "/" },
+  { title: "Contact", to: "/" },
+  { title: "FAQ", to: "/" },
+  { title: "Privacy & Terms", to: "/" },
 ]
 
 const contactLinks = [
@@ -77,7 +77,7 @@ export default function AppFooter() {
               height={{ xs: "64px", sm: "59px", md: "83px" }}
               textAlign={{ xs: "center", sm: "left" }}
             >
-              <Link to="/signup" style={{ textDecoration: "none" }}>
+              {/* <Link to="/signup" style={{ textDecoration: "none" }}> */}
                 <Button
                   sx={{
                     width: "100%",
@@ -88,13 +88,15 @@ export default function AppFooter() {
                     fontSize:{xs:"13px", md:"19px"},
                     maxWidth: { xs: "200px", sm: "151px", md: "215px" },
                   }}
+                  style={{ textDecoration: 'none'}}
                   variant="contained"
                   color="secondary"
+                  href="https://portal.blacbox.app/"
                 >
                   {" "}
                   Sign Up{" "}
                 </Button>
-              </Link>
+              {/* </Link> */}
             </Box>
           </Stack>
         </Box>

@@ -23,8 +23,8 @@ const benefits = [
   },
   {
     icon: FiTrendingUp,
-    title: "Miltiple services, one API",
-    text: "Competitive pricing models;  An API platform to help African businesses build better solutions easily, quickly, and at an affordable cost  ",
+    title: "Multiple services, one API",
+    text: "Competitive pricing models;  An API platform to help African businesses build better solutions easily, quickly, and at an affordable cost.  ",
   },
   {
     icon: MdPayments,
@@ -38,7 +38,7 @@ const benefits = [
   },
   {
     icon: MdControlCamera,
-    title: "Dedicted Customer Support",
+    title: "Dedicated Customer Support",
     text: "To provide users with speed, convenience, and confidence, we simplify the purchasing process for the final customer. Making it simple to ask for feedback and help.",
   },
 ]
@@ -47,17 +47,17 @@ const testimonials = [
   {
     img: mxLogo,
     title: "Merchant: WallX",
-    text: "Utilizing Blackbox API implementations allowed us to create friendly and simple financial processes for our service users. This is one integration provider that offers a straightforward and thoroughly explained procedure for companies to use.",
+    text: "Utilizing Blacbox API implementations allowed us to create friendly and simple financial processes for our service users. This is one integration provider that offers a straightforward and thoroughly explained procedure for companies to use.",
   },
   {
     img: mcLogo,
     title: "Merchant: Momo Ltd",
-    text: "We powered our lending site, framework, and implementation with BlackBox APIs and services. They offer a frictionless B2B automation process that makes integration simple and easy.",
+    text: "We powered our lending site, framework, and implementation with Blacbox APIs and services. They offer a frictionless B2B automation process that makes integration simple and easy.",
   },
   {
     img: ideatLogo,
     title: "Merchant: Ideate Zone",
-    text: "Blackbox's user-friendly and comprehensive API methods gave us the freedom to easily solve every assimilation problem needed to run our business",
+    text: "Blacbox's user-friendly and comprehensive API methods gave us the freedom to easily solve every assimilation problem needed to run our business",
   },
 ]
 
@@ -96,19 +96,19 @@ export default function HomePage() {
                 height={{ xs: "59px", md: "83px" }}
                 mt={{ xs: "17px", sm: "27px", md: "39px" }}
               >
-                <Link to="/signup" style={{ textDecoration: "none" }}>
                   <Button
                     fullWidth
                     sx={{
                       // mt: { xs: "17px", sm: "27px", md: "39px" },
                       height: "100%",
                     }}
+                    style={{ textDecoration: "none" }}
                     color="secondary"
+                    href="https://portal.blacbox.app/"
                     variant="contained"
                   >
                     Sign Up
                   </Button>
-                </Link>
               </Box>
             </Box>
           </Box>
@@ -244,7 +244,7 @@ export default function HomePage() {
             >
               <Typography>
                 {" "}
-                Blackbox provides automated solutions to help you create digital
+                Blacbox provides automated solutions to help you create digital
                 products that meet customer needs. We will remove the burden of
                 your business and marketing, allowing you to focus on what
                 matters most.
@@ -262,6 +262,7 @@ export default function HomePage() {
               width="100%"
               maxWidth={{ xs: "200px", sm: "230px", md: "326px" }}
             >
+              <Link to="/service" style={{textDecoration: 'none'}} >
               <Button
                 fullWidth
                 sx={{
@@ -272,6 +273,7 @@ export default function HomePage() {
               >
                 Explore services{" "}
               </Button>
+              </Link>
             </Box>
           </Stack>
         </Box>
@@ -346,7 +348,7 @@ export default function HomePage() {
                   <img src={item.img} alt={item.title + "logo"} height="100%" />
                 </Box>
                 <Box pb={"58px"}>
-                  <Typography textAlign="justify"> {item.text} </Typography>
+                  <Typography textAlign="center"> {item.text} </Typography>
                 </Box>
               </Box>
             </Box>

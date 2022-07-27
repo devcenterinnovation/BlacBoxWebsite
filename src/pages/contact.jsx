@@ -77,7 +77,7 @@ export default function ContactPage() {
                   >
                     {" "}
                     If you have any questions or need aid with services, please
-                    contact us via email or phone..
+                    contact us via email or phone.
                   </Typography>
                   <Button
                     variant="contained"
