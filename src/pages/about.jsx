@@ -11,7 +11,7 @@ import apiImage from "../images/about/about_api.svg"
 const tools = [
   {
     title: "Developers Tools",
-    text: "We've integrated simple programs that enable your developer to build and test APIs",
+    text: "We've integrated simple programs that enable your developer to build and test APIs.",
     img: devImage,
   },
   {

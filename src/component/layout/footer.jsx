@@ -69,7 +69,7 @@ export default function AppFooter() {
               {/* <Typography fontSize={{md:"15px"}}> CTA Sentence</Typography> */}
               <Typography textAlign={{ xs: "center", sm: "left" }}>
                 Start building your fintech product with seamless APIs. Get
-                started
+                Started.
               </Typography>
             </Box>
             <Box

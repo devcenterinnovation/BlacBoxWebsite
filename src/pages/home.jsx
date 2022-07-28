@@ -89,7 +89,7 @@ export default function HomePage() {
                 fontSize={"14px"}
               >
                 Coherent APIs to generate new accounts, send payments, verify
-                OTP and BVN, and retrive bank information
+                OTP and BVN, and retrive bank information.
               </Typography>
               <Box
                 maxWidth={{ xs: "144px", sm: "230px", md: "326px" }}
@@ -235,7 +235,7 @@ export default function HomePage() {
               fontWeight={"442"}
               letterSpacing={{ xs: "1px", sm: "2px", md: "3px" }}
             >
-              Integrating products with the features that customers need{" "}
+              Integrating products with the features that customers need.{" "}
             </Typography>
             <Box
               fontSize={"24px"}
